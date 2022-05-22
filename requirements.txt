@@ -6,3 +6,5 @@ notebook
 sklearn
 pandas
 seaborn
+opencv-python
+git+https://github.com/qubvel/classification_models.git
