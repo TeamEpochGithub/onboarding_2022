@@ -7,4 +7,7 @@ sklearn
 pandas
 seaborn
 opencv-python
+xgboost
+lightgbm
+tpot
 git+https://github.com/qubvel/classification_models.git
