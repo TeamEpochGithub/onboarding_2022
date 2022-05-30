@@ -2,9 +2,6 @@ import pandas as pd
 from evaluate_public import *
 import numpy as np
 
-df_train = pd.read_csv("../data/ford_train.csv")
-df_test = pd.read_csv("../data/ford_test.csv")
-
 
 def normalize(df: pd.DataFrame) -> pd.DataFrame:
     """Method to normalize an entire DataFrame"""
@@ -26,17 +23,3 @@ def convert_column_types(df: pd.DataFrame) -> pd.DataFrame:
     return df
 
 
-def make_predictions(predictor, X_test: np.array, df: pd.DataFrame) -> pd.DataFrame:
-    """
-    Finish method to actually use the predictor to make predictions. Watch the following things:
-    - Make sure not to normalize the carId's
-    - If you normalize the price, this should be converted back before submitting
-    - Check all your columns, make sure it represents the information well
-
-    :param predictor: Some model with a predict function
-    :param df: Test dataframe
-    :return: Submission dataframe
-    """
-
-    submission = pd.DataFrame.from_dict({'carId': [], 'price': []})
-    return submission
